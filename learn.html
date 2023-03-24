@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.6/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.6"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.6/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"Apprentissage","c":[{"t":"heading","d":2,"p":{"lines":[8,9]},"v":"ADMIN/MGMT","c":[{"t":"heading","d":3,"p":{"lines":[10,11]},"v":"Heures et absences"},{"t":"heading","d":3,"p":{"lines":[16,17]},"v":"Rendus"},{"t":"heading","d":3,"p":{"lines":[20,21]},"v":"Trello"},{"t":"heading","d":3,"p":{"lines":[27,28]},"v":"Scrum"},{"t":"heading","d":3,"p":{"lines":[32,33]},"v":"Gestion du temps et des rendez-vous"},{"t":"heading","d":3,"p":{"lines":[35,36]},"v":"Todos / TaDas"}]},{"t":"heading","d":2,"p":{"lines":[37,38]},"v":"WEB","c":[{"t":"list_item","d":4,"p":{"lines":[38,39]},"v":"HTML"},{"t":"list_item","d":4,"p":{"lines":[39,40]},"v":"JS"},{"t":"list_item","d":4,"p":{"lines":[40,41]},"v":"jQuery"},{"t":"list_item","d":4,"p":{"lines":[41,42]},"v":"CSS","c":[{"t":"list_item","d":6,"p":{"lines":[42,43]},"v":"Sass"},{"t":"list_item","d":6,"p":{"lines":[43,44]},"v":"SCSS"},{"t":"list_item","d":6,"p":{"lines":[44,45]},"v":"Flexbox","c":[{"t":"list_item","d":8,"p":{"lines":[45,46]},"v":"Froggy (<a href=\"\">link</a>)"}]}]},{"t":"list_item","d":4,"p":{"lines":[46,47]},"v":"Developers Tools"},{"t":"list_item","d":4,"p":{"lines":[47,48]},"v":"Status HTTP"},{"t":"list_item","d":4,"p":{"lines":[48,49]},"v":"Méthodes HTTP"},{"t":"list_item","d":4,"p":{"lines":[49,50]},"v":"AJAX"},{"t":"list_item","d":4,"p":{"lines":[50,51]},"v":"CMS","c":[{"t":"list_item","d":6,"p":{"lines":[51,52]},"v":"WordPress"},{"t":"list_item","d":6,"p":{"lines":[52,53]},"v":"Gatsby"},{"t":"list_item","d":6,"p":{"lines":[53,54]},"v":"Grav"}]},{"t":"list_item","d":4,"p":{"lines":[54,55]},"v":"API","c":[{"t":"list_item","d":6,"p":{"lines":[55,56]},"v":"REST"},{"t":"list_item","d":6,"p":{"lines":[56,57]},"v":"GraphQL"}]},{"t":"list_item","d":4,"p":{"lines":[57,58]},"v":"Servers","c":[{"t":"list_item","d":6,"p":{"lines":[58,59]},"v":"Apache"},{"t":"list_item","d":6,"p":{"lines":[59,60]},"v":"NGINX"}]}]},{"t":"heading","d":2,"p":{"lines":[61,62]},"v":"Operating System","c":[{"t":"heading","d":3,"p":{"lines":[63,64]},"v":"Linux","c":[{"t":"list_item","d":5,"p":{"lines":[65,66]},"v":"Shells","c":[{"t":"list_item","d":7,"p":{"lines":[66,67]},"v":"bash"},{"t":"list_item","d":7,"p":{"lines":[67,68]},"v":"zsh"},{"t":"list_item","d":7,"p":{"lines":[68,69]},"v":"Makefile"},{"t":"list_item","d":7,"p":{"lines":[69,70]},"v":"DOC","c":[{"t":"list_item","d":9,"p":{"lines":[70,71]},"v":"https://explainshell.com/"},{"t":"list_item","d":9,"p":{"lines":[71,72]},"v":"https://github.com/jlevy/the-art-of-command-line"},{"t":"list_item","d":9,"p":{"lines":[72,73]},"v":"https://blog.benediktsvogler.com/blog/cheatsheet%20terminal"}]}]},{"t":"list_item","d":5,"p":{"lines":[74,75]},"v":"SSH","c":[{"t":"list_item","d":7,"p":{"lines":[75,76]},"v":"config"},{"t":"list_item","d":7,"p":{"lines":[76,77]},"v":"key"},{"t":"list_item","d":7,"p":{"lines":[77,78]},"v":"scp"},{"t":"list_item","d":7,"p":{"lines":[78,79]},"v":"https://www.crypto101.io/"}]},{"t":"list_item","d":5,"p":{"lines":[79,80]},"v":"CURL","c":[{"t":"list_item","d":7,"p":{"lines":[80,81]},"v":"httpie"},{"t":"list_item","d":7,"p":{"lines":[81,82]},"v":"postman"}]},{"t":"list_item","d":5,"p":{"lines":[82,83]},"v":"Shortcut"},{"t":"list_item","d":5,"p":{"lines":[83,84]},"v":"Common tools","c":[{"t":"list_item","d":7,"p":{"lines":[84,85]},"v":"apt / synaptic"},{"t":"list_item","d":7,"p":{"lines":[85,86]},"v":"grep"},{"t":"list_item","d":7,"p":{"lines":[86,87]},"v":"netstat"},{"t":"list_item","d":7,"p":{"lines":[87,88]},"v":"ip"},{"t":"list_item","d":7,"p":{"lines":[88,89]},"v":"cat / less / more"},{"t":"list_item","d":7,"p":{"lines":[89,90]},"v":"nano / vim / ...","c":[{"t":"list_item","d":9,"p":{"lines":[90,91]},"v":"https://trmm.net/Moving_efficiently/"}]},{"t":"list_item","d":7,"p":{"lines":[91,92]},"v":"cut / sed / awk"},{"t":"list_item","d":7,"p":{"lines":[92,93]},"v":"jq"}]}]},{"t":"heading","d":3,"p":{"lines":[94,95]},"v":"Mac Os X","c":[{"t":"list_item","d":5,"p":{"lines":[95,96]},"v":"Common tools"},{"t":"list_item","d":5,"p":{"lines":[96,97]},"v":"Homebrew"}]},{"t":"heading","d":3,"p":{"lines":[98,99]},"v":"Windows","c":[{"t":"list_item","d":5,"p":{"lines":[99,100]},"v":"AD"},{"t":"list_item","d":5,"p":{"lines":[100,101]},"v":"GPO"},{"t":"list_item","d":5,"p":{"lines":[101,102]},"v":"Common tools"},{"t":"list_item","d":5,"p":{"lines":[102,103]},"v":"WSL (Linux subsystem)"},{"t":"list_item","d":5,"p":{"lines":[103,104]},"v":"MingW"},{"t":"list_item","d":5,"p":{"lines":[104,105]},"v":"Putty"},{"t":"list_item","d":5,"p":{"lines":[105,106]},"v":"Office"}]}]},{"t":"heading","d":2,"p":{"lines":[107,108]},"v":"DEVOPS","c":[{"t":"list_item","d":4,"p":{"lines":[108,109]},"v":"Git"},{"t":"list_item","d":4,"p":{"lines":[109,110]},"v":"Docker"},{"t":"list_item","d":4,"p":{"lines":[110,111]},"v":"Ansible"},{"t":"list_item","d":4,"p":{"lines":[111,112]},"v":"XAAS"},{"t":"list_item","d":4,"p":{"lines":[112,113]},"v":"Grafana"},{"t":"list_item","d":4,"p":{"lines":[113,114]},"v":"Kibana"},{"t":"list_item","d":4,"p":{"lines":[114,115]},"v":"Prometheus"},{"t":"list_item","d":4,"p":{"lines":[115,116]},"v":"Alerting"},{"t":"list_item","d":4,"p":{"lines":[116,117]},"v":"CI/CD"},{"t":"list_item","d":4,"p":{"lines":[117,118]},"v":"Github Action"},{"t":"list_item","d":4,"p":{"lines":[118,119]},"v":"Gitlab pipelines"}]},{"t":"heading","d":2,"p":{"lines":[120,121]},"v":"PROG","c":[{"t":"list_item","d":4,"p":{"lines":[121,122]},"v":"Node JS"},{"t":"list_item","d":4,"p":{"lines":[122,123]},"v":"BASH"},{"t":"list_item","d":4,"p":{"lines":[123,124]},"v":"Perl"},{"t":"list_item","d":4,"p":{"lines":[124,125]},"v":"PHP"},{"t":"list_item","d":4,"p":{"lines":[125,126]},"v":"Ruby"},{"t":"list_item","d":4,"p":{"lines":[126,127]},"v":"Python"},{"t":"list_item","d":4,"p":{"lines":[127,128]},"v":"C#"},{"t":"list_item","d":4,"p":{"lines":[128,129]},"v":"JAVA"}]},{"t":"heading","d":2,"p":{"lines":[130,131]},"v":"SGDB","c":[{"t":"list_item","d":4,"p":{"lines":[131,132]},"v":"SQL"},{"t":"list_item","d":4,"p":{"lines":[132,133]},"v":"MySQL"},{"t":"list_item","d":4,"p":{"lines":[133,134]},"v":"MariDB"},{"t":"list_item","d":4,"p":{"lines":[134,135]},"v":"PostgreSQL"},{"t":"list_item","d":4,"p":{"lines":[135,136]},"v":"MongoDB"}]},{"t":"heading","d":2,"p":{"lines":[137,138]},"v":"Other","c":[{"t":"list_item","d":4,"p":{"lines":[138,139]},"v":"LaTeX"},{"t":"list_item","d":4,"p":{"lines":[139,140]},"v":"Markdown"},{"t":"list_item","d":4,"p":{"lines":[140,141]},"v":"Pandoc"},{"t":"list_item","d":4,"p":{"lines":[141,142]},"v":"Regex","c":[{"t":"list_item","d":6,"p":{"lines":[142,143]},"v":"https://github.com/ziishaned/learn-regex"},{"t":"list_item","d":6,"p":{"lines":[143,144]},"v":"https://github.com/epfl-dojo/kata-regexp"},{"t":"list_item","d":6,"p":{"lines":[144,145]},"v":"https://regexcrossword.com/"},{"t":"list_item","d":6,"p":{"lines":[145,146]},"v":"https://regex101.com/"}]}]}]})</script>
+</body>
+</html>
